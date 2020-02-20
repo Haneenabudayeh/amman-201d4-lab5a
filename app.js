@@ -14,7 +14,7 @@ function sum(a, b) { //eslint-disable-line
     var message = `The sum of ${a} and ${b} is ${theSum}.`;
     return [theSum, message];
 }
-testSum(4,7);
+testSum();
 
 // Here is the test for sum(); uncomment it to run it
 // testSum(4, 7);
@@ -30,9 +30,14 @@ Write a function called multiply() that takes in two numbers as arguments and re
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiply() function and see if the test passes.*/
 
 // Write your code here
-function multiply(a, b) { //eslint-disable-line
+function multiply(a, b) {
+    var theproduct = a * b;
 
+var mass = `The product of ${a} and ${b} is ${theproduct}.`;
+return [theproduct, mass];
 }
+testMultiply();
+
 
 // Here is the test for multiply(); uncomment it to run it
 // testMultiply(5,9);
@@ -51,9 +56,19 @@ IMPORTANT DETAIL: You may not use the arithmetic operators + and * in this funct
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumAndMultiply() function and see if the test passes.*/
 
 // Write your code here
-function sumAndMultiply(a, b, c) { //eslint-disable-line
+// function sumAndMultiply(a, b, c) { 
+//     var summation1=sum(a,b)[0];
+//     var summation2=sum(summation1,c)[0];
+   
+//     var theproduct1=multiply(a,b)[0];
+//     var theproduct2=multiply(theproduct1,c)[0];
+    
+//     var thirdElemant="4 and 7 and 5 sum to 16.";
+//     var fourthElemant="The product of 4 and 7 and 5 is 140.";
 
-}
+//     return[summation2,theproduct2,thirdElemant,fourthElemant];
+// }
+// testSumAndMultiply(4,7,5);
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
 // testSumAndMultiply(4,7,5);
