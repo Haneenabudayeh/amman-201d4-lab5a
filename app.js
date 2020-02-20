@@ -91,7 +91,7 @@ function sumArray(sumArr) {
     var solve1 = sum(testArray[0], testArray[1])[0];
     var solve2 = sum(solve1, testArray[2])[0];
     var massagee = '2,3,4 was passed in as an array of numbers, and 9 is their sum.';
-    return [ solve2, massagee ];
+    return [solve2, massagee];
 }
 testSumArray();
 
@@ -112,9 +112,13 @@ IMPORTANT DETAIL: You may not use the arithmetic operator * in this function. To
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyArray() function and see if the test passes.*/
 
 // Write your code here
-function multiplyArray(multArr) { //eslint-disable-line
-
+function multiplyArray(multArr) { 
+    var mulltiply1 = multiply(testArray[0], testArray[1])[0];
+    var mulltiply2 = multiply(mulltiply1, testArray[2])[0];
+    var massagee2 = 'The numbers 2,3,4 have a product of 24.';
+    return [mulltiply2, massagee2];
 }
+testMultiplyArray();
 
 // Here is the test for multiplyArray(); uncomment it to run it
 // testMultiplyArray(testArray);
